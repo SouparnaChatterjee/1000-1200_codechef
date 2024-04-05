@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    float A;
+    float B;
+    float C;
+    float d;
+    cin>>t;
+    d=ceil(101/2);
+    while(t--)
+    {
+       cin>>A>>B>>C;
+       if(A>d)
+       cout<<"A"<<endl;
+       else if(B>d)
+       cout<<"B"<<endl;
+       else if(C>d)
+       cout<<"C"<<endl;
+       else cout<<"NOTA"<<endl;
+    }
+}
