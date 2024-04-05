@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t,n;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        map<int, int> mp;
+        for(int i=0;i<2*n;i++)
+        {
+            int x;
+            cin>>x;
+            mp[x]++;
+        }
+        bool ans=true;
+        for(auto it:mp)
+        {
+            if(it.second>=3)
+            ans=false;
+        }
+        if(ans==true)
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
+    }
+}
