@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,z;
+	    cin>>n;
+	    string sr;
+	    cin>>sr;
+	    z = count(sr.begin(),sr.end(),'0');
+	   if(z<(n-z))
+	   cout<<z+1<<endl;
+	   else
+	   cout<<n-z<<endl;
+	}
+	return 0;
+}
