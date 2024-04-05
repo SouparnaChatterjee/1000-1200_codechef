@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t,n;
+    string s;
+    cin>>t;
+    while(t--)
+    {
+        int foreigner=0;
+        int desi=0;
+        cin>>n;
+        cin>>s;
+        for(int i=0;i<n;i++)
+        {
+            if(s[i]=='Y')
+            {
+                foreigner++;
+                break;
+            }
+            if(s[i]=='I')
+            {
+                desi++;
+                break;
+            }
+           
+        }
+        if(foreigner==1)
+        cout<<"NOT INDIAN"<<endl;
+        else if(desi==1)
+        cout<<"INDIAN"<<endl;
+        else
+        cout<<"NOT SURE"<<endl;
+}
+}
