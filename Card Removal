@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t,n;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        int a[n];
+        map<int,int>m;
+        for(int i=0;i<n;i++)
+        {
+            cin>>a[i];
+            m[a[i]]++;
+        }
+        int freq=0;
+        for(int i=0;i<n;i++)
+        {
+            if(m[a[i]]>freq)
+            freq=m[a[i]];}
+            cout<<n-freq<<endl;
+    }
+}
