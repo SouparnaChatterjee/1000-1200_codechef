@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    
+    cin>>t;
+    while(t--)
+    {
+        //area--- sqrt--- assign to integer
+        int n,a;
+        cin>>n>>a;
+        //cout<<sqrt(n)*a<<endl;
+        int x=sqrt(n);
+        cout<<x*a<<endl;
+    }
+}
